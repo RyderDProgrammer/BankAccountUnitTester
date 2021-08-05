@@ -26,6 +26,9 @@ jobs:
       
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v1.0.5
+      
+    - name: Restore NuGet Packages
+      run: nuget restore BankAccountUnitTester.sln
     # Compile app in release mode
     - name: Build App
       run: msbuild BankAccountUnitTester.sln /p:Configuration=Release
