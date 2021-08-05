@@ -124,7 +124,7 @@ namespace BankAccountUnitTester.Tests
         {
             double negativeWith = -5;
 
-            Assert.ThrowsException<ArgumentException>(() => acc.Deposit(negativeWith));
+            Assert.ThrowsException<ArgumentException>(() => acc.Withdraw(negativeWith));
         }
     }
 }
